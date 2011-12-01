@@ -1,0 +1,26 @@
+<% @page_title = "Customer List" %>
+
+<div class="Customer list">
+
+  <h2>Customers</h2>
+
+  <%=	 link_to("Add new Customer", {:action => 'new'}, :class => 'action new') %>
+
+  <div><%=	 pluralize(@customers.size, 'customer') %> found</div>
+
+  <table class="listing" summary="customer list">
+    <tr class="header">
+      <th>Name</th>
+      <th>Email</th>
+      <th>Order History</th>
+    </tr>
+    <%	 @customers.each do |customer| %>
+        <tr class="<%= cycle('odd', 'even') %>">
+          <td><%=	 customer.name %></td>
+          <td><%=	 customer.email %></td>
+          <td><%=	 link_to("Order History", {:action => 'orders', :id => customer.id}, :class=> 'action orders') %></td>
+        </tr>
+    <%	 end %>
+  </table>
+
+</div>

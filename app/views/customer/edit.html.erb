@@ -1,0 +1,18 @@
+<%  @page_title = "Edit Customer" %>
+
+<%=	 link_to("<< Back to Customer List", {:action => 'list'}, :class => 'back-link') %>
+
+<div class="customer edit">
+  <h2>Edit Customer</h2>
+
+  <%=	 form_for(:customer, :url => {:action => 'update', :id => @customer.id}) do |f| %>
+
+     <%=	 render(:partial => "form", :locals => {:f => f}) %>
+
+     <div class="form-buttons">
+       <%=	 submit_tag("Edit Customer") %>
+     </div>
+
+  <%	 end %>
+
+</div>

@@ -1,0 +1,22 @@
+<!--needs a the helper method in Applciation Helpers and the template in shared partials to work-->
+<%= error_messages_for( @customer )%>
+
+    <table summary="Customer form fields">
+      <tr>
+        <th><%= f.label(:first_name) %> </th>
+        <td><%= f.text_field(:first_name) %></td>
+      </tr>
+      <tr>
+        <th><%= f.label(:last_name) %> </th>
+        <td><%= f.text_field(:last_name) %></td>
+      </tr>
+      <tr>
+        <th><%= f.label(:email)%></th>
+        <td><%= f.text_field(:email) %></td>
+      </tr>
+      <tr>
+      	<th><%= f.label(:created_at, "Created")%></th>
+      	<td><%= f.datetime_select(:created_at, :order => [:month, :day, :year])%></td>
+      </tr>
+    </table>
+

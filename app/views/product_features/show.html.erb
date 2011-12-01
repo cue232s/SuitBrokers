@@ -1,0 +1,33 @@
+<% @page_title = "Show Product Feature" %>
+
+<%= link_to("<< Back to List", {:action => 'list', :product_id => @product_feature.product_id}, :class => 'back-link')%>
+
+<article class="module width_half">
+	<header><h3>Product Feature Info</h3></header>
+
+    <%=	 image_tag @product_feature.photo.url(:small) %>
+	
+	<table summary="Product detail view">
+		<tr>
+			<th>Name</th>
+			<td><%= @product_feature.name %></td>
+		</tr>
+		<tr>
+			<th>Position</th>
+			<td><%= @product_feature.position %></td>
+		</tr>
+		<tr>
+			<th>Active?</th>
+			<td><%= @product_feature.active ? 'true' : 'false' %> </td>
+		</tr>
+		<tr>
+			<th>Created</th>
+			<td><%= @product_feature.created_at %></td>
+		</tr>
+		<tr>
+			<th>Updated</th>
+			<td><%= @product_feature.updated_at %></td>
+		</tr>
+	</table>
+
+</article>

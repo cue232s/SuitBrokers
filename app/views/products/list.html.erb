@@ -1,0 +1,48 @@
+<% @page_title = "Product List" %>
+
+
+<article class="module width_3_quarter">
+  <header>
+    <h3 class="tabs_involved">Products</h3>
+
+    <ul class="tabs">
+
+       <li> <%=	 link_to "Add new Product", new_product_path, :class => 'action new', :remote => true %></li>
+
+    </ul>
+
+  </header>
+  <!--<div><%=	 pluralize(@products.size, 'product') %> found</div>-->
+
+  <table class="tablesorter" summary="product list">
+    <thead>
+    <tr class="header">
+      <th>&nbsp;</th>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <%	 @products.each do |product| %>
+        <tr class="<%= cycle('odd', 'even') %>">
+          <td><%=    product.position %></td>
+          <td><%=	 image_tag product.photo.url(:thumb) %></td>
+          <td><%=	 product.name %></td>
+          <td><%=	 product.price %></td>
+          <td class="actions">
+            <%= link_to("Show Features", {:controller => 'Product_features', :action => 'list', :product_id => product.id}, :class => 'action show') %>
+            <%= link_to("Show", {:action => 'show', :id => product.id}, :class => 'action show') %>
+            <%= link_to("Edit", edit_product_path(product), :class => 'action edit') %>
+            <%= link_to 'Destroy', product, confirm: 'Are you sure?', :remote => true, :class => 'delete_post', :method => :delete %>
+          </td>
+        </tr>
+    <%	 end %>
+    </tbody>
+  </table>
+
+</article>
+
+<article id="newform" class="module width_quarter" style= "visibility: hidden">
+</article>

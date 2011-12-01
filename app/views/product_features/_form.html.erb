@@ -1,0 +1,27 @@
+<%= error_messages_for( @product_feature )%>
+    <table summary="Product Features form fields">
+       <tr>
+      <th><%= f.label(:product_id, "product")%></th>
+  <td><%= f.select(:product_id, @products.all.collect {|s| [s.name, s.id]}) %></td>
+      </tr>
+      <tr>
+        <fieldset>
+        <th><%= f.label(:name) %> </th>
+        <td><%= f.text_field(:name) %></td>
+        </fieldset>
+      </tr>
+      <tr>
+        <th><%= f.label(:position) %></th>
+        <td><%= f.select(:position, 1..@product_feature_count) %></td>
+      </tr>
+      <tr>
+        <th><%= f.label(:active)%>?</th>
+        <td><%= f.check_box(:active) %></td>
+      </tr>
+      <tr>
+      	<th><%= f.label 'photo' %></th>
+      	<td><%= f.file_field(:photo) %></td>
+      </tr>
+
+    </table>
+

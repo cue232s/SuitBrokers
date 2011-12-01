@@ -1,0 +1,37 @@
+<% @page_title = "Show Product" %>
+
+<%= link_to("<< Back to List", products_path, :class => 'back-link')%>
+
+<article class="module width_half">
+	<header><h3>Product Info</h3></header>
+
+    <%=	 image_tag @product.photo.url(:small) %>
+	
+	<table summary="Product detail view">
+		<tr>
+			<th>Name</th>
+			<td><%= @product.name %></td>
+		</tr>
+		<tr>
+			<th>Position</th>
+			<td><%= @product.position %></td>
+		</tr>
+        <tr>
+            <th>Price</th>
+            <td><%=	 @product.price %></td>
+        </tr>
+		<tr>
+			<th>Active?</th>
+			<td><%= @product.active ? 'true' : 'false' %> </td>
+		</tr>
+		<tr>
+			<th>Created</th>
+			<td><%= @product.created_at %></td>
+		</tr>
+		<tr>
+			<th>Updated</th>
+			<td><%= @product.updated_at %></td>
+		</tr>
+	</table>
+
+</article>

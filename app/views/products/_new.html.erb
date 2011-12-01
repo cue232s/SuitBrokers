@@ -1,0 +1,18 @@
+<style>
+ input{size: 20px;}
+</style>
+
+<div class="product new">
+ <header> <h3>Create A Product</h3></header>
+
+  <%= form_for(:product, :url => {:action => 'create'}, :html => { :multipart => true, :remote => true }) do |f| %>
+
+  	<%= render(:partial =>"form", :locals => {:f => f}) %>
+  <footer>
+    <div class="submit_link">
+      <%= submit_tag("Create Product") %>
+    </div>
+  </footer>
+
+  <% end %>
+</div>

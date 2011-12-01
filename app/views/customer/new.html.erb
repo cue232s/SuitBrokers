@@ -1,0 +1,18 @@
+<%  @page_title = "Create Customer" %>
+
+<%=	 link_to("<< Back to Customer List", {:action => 'list'}, :class => 'back-link') %>
+
+<div class="customer new">
+  <h2>Create Customer</h2>
+
+  <%=	 form_for(:customer, :url => {:action => 'create'}) do |f| %>
+
+     <%=	 render(:partial => "form", :locals => {:f => f}) %>
+
+     <div class="form-buttons">
+       <%=	 submit_tag("Create Customer") %>
+     </div>
+
+  <%	 end %>
+
+</div>

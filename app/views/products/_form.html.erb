@@ -1,0 +1,26 @@
+<%= error_messages_for( @product )%>
+    <div class="module_content">
+      <fieldset>
+        <%= f.label(:name) %> 
+        <%= f.text_field(:name, :size => 20) %>
+      </fieldset>
+      <fieldset>
+        <%= f.label(:position) %>
+        <%= f.select(:position, 1..@product_count) %>
+      </fieldset>
+      <fieldset>
+        <%= f.label(:active?)%>
+        <%= f.check_box(:active) %>
+      </fieldset>
+      <fieldset>
+      	<%= f.label(:price)%>
+      	<%= f.text_field(:price, :size => 20) %>
+
+      </fieldset>
+      <fieldset>
+      	<%= f.label 'photo' %>
+      	<%= f.file_field(:photo) %>
+      </fieldset>
+
+    </div>
+

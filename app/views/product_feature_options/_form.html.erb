@@ -1,0 +1,32 @@
+<%= error_messages_for( @product_feature_option )%>
+    <article class = "module width_quarter">
+      <header><h3>New Product feature Option </h3></header>
+      <div class="module_content">
+     <fieldset>
+      <%= f.label(:product_feature_id, "product_feature")%>
+      <%= f.select(:product_feature_id, @product_features.all.collect {|s| [s.name, s.id]}) %>
+      </fieldset>
+        <fieldset>
+        <%= f.label(:name) %> 
+        <%= f.text_field(:name) %>
+        </fieldset>
+        <fieldset>
+        <%= f.label(:price) %>
+        <%= f.text_field(:price) %>
+        </fieldset>
+      <fieldset>
+        <%= f.label(:position) %>
+        <%= f.select(:position, 1..@product_feature_option_count) %>
+      </fieldset>
+      <fieldset>
+        <%= f.label(:active)%>?
+        <%= f.check_box(:active) %>
+      </fieldset>
+      <fieldset>
+      	<%= f.label 'photo' %>
+      	<%= f.file_field(:photo) %>
+      </fieldset>
+      </div>
+
+    </article>
+

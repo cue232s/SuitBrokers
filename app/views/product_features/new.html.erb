@@ -1,0 +1,16 @@
+<% @page_title = "Create Product Feature" %>
+<%= link_to("<< Back to List", {:action => 'list', :product_id => @product_feature.product_id}, :class => 'back-link') %>
+
+<div class="product feature new">
+  <h2>Create A Product</h2>
+
+  <%= form_for(:product_feature, :url => {:action => 'create', :product_id => @product_feature.product_id}, :html => { :multipart => true }) do |f| %>
+  
+  	<%= render(:partial =>"form", :locals => {:f => f}) %>
+    
+    <div class="form-buttons">
+      <%= submit_tag("Create Product Feature") %>
+    </div>
+    
+  <% end %>
+</div>
