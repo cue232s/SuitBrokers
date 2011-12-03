@@ -25,20 +25,7 @@
     </tr>
     </thead>
     <tbody>
-    <%	 @products.each do |product| %>
-        <tr class="<%= cycle('odd', 'even') %>">
-          <td><%=    product.position %></td>
-          <td><%=	 image_tag product.photo.url(:thumb) %></td>
-          <td><%=	 product.name %></td>
-          <td><%=	 product.price %></td>
-          <td class="actions">
-            <%= link_to("Show Features", {:controller => 'Product_features', :action => 'list', :product_id => product.id}, :class => 'action show') %>
-            <%= link_to("Show", {:action => 'show', :id => product.id}, :class => 'action show') %>
-            <%= link_to("Edit", edit_product_path(product), :class => 'action edit') %>
-            <%= link_to 'Destroy', product, confirm: 'Are you sure?', :remote => true, :class => 'delete_post', :method => :delete %>
-          </td>
-        </tr>
-    <%	 end %>
+    <%= render(:partial => "listgen", :locals => {:products => @products}) %>
     </tbody>
   </table>
 

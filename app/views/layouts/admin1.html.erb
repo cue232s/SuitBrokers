@@ -85,10 +85,11 @@
 	</aside><!-- end of sidebar -->
 	
 	<section id="main" class="column">
+        <span id="flashnotice">
 		<% if !flash[:notice].blank? %>
 		<h4 class="alert_success"><%=	 flash[:notice] %></h4>
 		<% end %>
-		
+		</span>
 		<%=	 yield %>
 			
 

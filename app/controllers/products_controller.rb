@@ -27,7 +27,7 @@ class ProductsController < ApplicationController
 
       @product.move_to_position(new_position)
       flash[:notice]= "Product created."
-      redirect_to(:action =>'list')
+      redirect_to(:action => @products)
     else
 
       @product_count = Product.count + 1
@@ -43,12 +43,12 @@ class ProductsController < ApplicationController
   def destroy
     product = Product.find(params[:id])
     product.destroy
-    flash[:notice]= product.name + "deleted."
+    flash[:notice]= product.name + " deleted."
     #redirect_to(:action => 'list')
 
     respond_to do |format|
       format.html { redirect_to products_url }
-      format.js {render :nothing => true}
+      format.js {render :js => true, :locals => {flash[:notice] => product.name + " deleted" }}
     end
 
 

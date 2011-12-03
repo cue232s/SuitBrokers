@@ -1,0 +1,3 @@
+$('section#main').html(<% if !flash[:notice].blank? %>
+                            <h4 class="alert_success"><%=	 flash[:notice] %></h4>
+                        <%end%> );

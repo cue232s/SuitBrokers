@@ -1,4 +1,4 @@
-<%	 @products.each do |product| %>
+<%	 products.each do |product| %>
     <tr class="<%= cycle('odd', 'even') %>">
       <td><%=    product.position %></td>
       <td><%=	 image_tag product.photo.url(:thumb) %></td>
