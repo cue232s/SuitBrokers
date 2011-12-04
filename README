@@ -263,6 +263,9 @@ vendor
 
 This file was modified by JetBrains RubyMine 3.2.4 for binding GitHub repository
 =======
+<<<<<<< HEAD
 hello SB how are you!
-Sike!
+
+
+>>>>>>> experimental
 >>>>>>> 1e80623da84b4e4a0c650e1cc65149d5e17f626b
