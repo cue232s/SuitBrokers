@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="63b10096-a754-42e5-924c-0ba921ad27e4" name="Default" comment="test">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SuitBrokers.iml" afterPath="$PROJECT_DIR$/.idea/SuitBrokers.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
     </list>
     <ignored path="SuitBrokers.iws" />
@@ -43,7 +42,7 @@
       <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="270" column="25" selection-start="9394" selection-end="9394" vertical-scroll-proportion="0.81050956">
+            <state line="264" column="0" selection-start="9303" selection-end="9303" vertical-scroll-proportion="0.7563694">
               <folding />
             </state>
           </provider>
@@ -134,30 +133,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites">
-        <subPane subId="SuitBrokers">
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.intellij.ide.favoritesTreeView.FavoritesTreeNodeDescriptor" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="RailsProjectView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SuitBrokers" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SuitBrokers" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -356,6 +331,30 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="RailsProjectView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SuitBrokers" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SuitBrokers" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Favorites">
+        <subPane subId="SuitBrokers">
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.intellij.ide.favoritesTreeView.FavoritesTreeNodeDescriptor" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -422,14 +421,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="178" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="191" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="189" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="193" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="725" />
+    <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="729" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="725" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="189" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="188" />
@@ -443,11 +442,11 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.VCSs.Git" />
-    <property name="Ruby.ViewRefParam.DefaultExtension" value="js.erb" />
-    <property name="dynamic.classpath" value="false" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="Ruby.ViewRefParam.DefaultExtension" value="js.erb" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -610,6 +609,13 @@
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -639,24 +645,11 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
-      <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSRemoteDebuggerConfigurationSettings>
-      <method />
-    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda">
@@ -678,6 +671,12 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="INHERITANCE_CHECK_DISABLED" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <configuration default="false" name="customers_controller" type="RubyRunConfigurationType" factoryName="Ruby">
@@ -845,7 +844,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282572" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14177407" sideWeight="0.2427481" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14632297" sideWeight="0.52824426" order="1" side_tool="false" content_ui="tabs" x="519" y="206" width="328" height="355" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14859742" sideWeight="0.52824426" order="1" side_tool="false" content_ui="tabs" x="519" y="206" width="328" height="355" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993232" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="-88" y="263" width="981" height="458" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4717557" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -938,23 +937,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/products_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="59" selection-start="365" selection-end="365" vertical-scroll-proportion="0.056478404">
-          <folding />
-        </state>
+        <state line="21" column="59" selection-start="365" selection-end="365" vertical-scroll-proportion="0.056478404" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="51" selection-start="224" selection-end="224" vertical-scroll-proportion="0.2757475">
-          <folding />
-        </state>
+        <state line="11" column="51" selection-start="224" selection-end="224" vertical-scroll-proportion="0.2757475" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/products/_listgen.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="74" selection-start="771" selection-end="771" vertical-scroll-proportion="0.6518771">
-          <folding />
-        </state>
+        <state line="14" column="74" selection-start="771" selection-end="771" vertical-scroll-proportion="0.6518771" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/products/new.js.erb">
@@ -964,49 +957,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/admin1.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="21" selection-start="2983" selection-end="2983" vertical-scroll-proportion="0.08928572">
-          <folding />
-        </state>
+        <state line="92" column="21" selection-start="2983" selection-end="2983" vertical-scroll-proportion="0.08928572" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/products/destroy.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="37" selection-start="171" selection-end="171" vertical-scroll-proportion="0.106583074">
-          <folding />
-        </state>
+        <state line="2" column="37" selection-start="171" selection-end="171" vertical-scroll-proportion="0.106583074" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/products/delete.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="83" selection-start="462" selection-end="462" vertical-scroll-proportion="0.30375427">
-          <folding />
-        </state>
+        <state line="14" column="83" selection-start="462" selection-end="462" vertical-scroll-proportion="0.30375427" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="15" selection-start="597" selection-end="597" vertical-scroll-proportion="0.4263323">
-          <folding />
-        </state>
+        <state line="16" column="15" selection-start="597" selection-end="597" vertical-scroll-proportion="0.4263323" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/products/list.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="51" selection-start="645" selection-end="645" vertical-scroll-proportion="0.24573378">
-          <folding />
-        </state>
+        <state line="27" column="51" selection-start="645" selection-end="645" vertical-scroll-proportion="0.24573378" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="270" column="25" selection-start="9394" selection-end="9394" vertical-scroll-proportion="0.81050956">
+        <state line="264" column="0" selection-start="9303" selection-end="9303" vertical-scroll-proportion="0.7563694">
           <folding />
         </state>
       </provider>
