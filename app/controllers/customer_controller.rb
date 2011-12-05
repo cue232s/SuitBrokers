@@ -1,6 +1,6 @@
 class CustomerController < ApplicationController
 
-  layout 'admin'
+  layout 'admin1'
 
   def index
     list
