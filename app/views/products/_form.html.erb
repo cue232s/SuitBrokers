@@ -9,6 +9,10 @@
         <%= f.select(:position, 1..@product_count) %>
       </fieldset>
       <fieldset>
+        <%= f.label(:parent_id) %>
+        <%= f.select(:parent_id, @products.collect {|s| [s.name, s.id]}) %>
+      </fieldset>
+      <fieldset>
         <%= f.label(:active?)%>
         <%= f.check_box(:active) %>
       </fieldset>

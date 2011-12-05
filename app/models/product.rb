@@ -11,6 +11,9 @@ class Product < ActiveRecord::Base
   has_many  :product_features
   has_many  :product_feature_options, :through => :product_features
 
+  validates :name, presence: true
+  validates :price, numericality: {greater_than_or_equal_to: 0.1}
+
   has_attached_file :photo,
     :styles => {
         :thumb => "100x100>",

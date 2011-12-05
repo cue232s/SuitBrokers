@@ -5,7 +5,7 @@
 <div class="product edit">
   <h2>Update Product</h2>
 
-  <%= form_for(:product, :url => {:action => 'update', :id => @product.id}) do |f| %>
+  <%= form_for(@product, :url => {:action => 'update'}, :html => {:multipart => true}) do |f| %>
   
   	<%= render(:partial =>"form", :locals => {:f => f}) %>
   	

@@ -10,6 +10,7 @@ class ProductsController < ApplicationController
    def new
     @product = Product.new
     @product_count = Product.count + 1
+    @products = Product.sorted
 
     respond_to do |format|
       format.html
@@ -58,6 +59,7 @@ class ProductsController < ApplicationController
   def edit
     @product = Product.find(params[:id])
     @product_count = Product.count
+    @products = Product.sorted
   end
 
   def update
