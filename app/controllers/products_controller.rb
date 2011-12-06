@@ -32,6 +32,7 @@ class ProductsController < ApplicationController
     else
 
       @product_count = Product.count + 1
+      @products = Product.sorted
       render ('new')
     end
   end

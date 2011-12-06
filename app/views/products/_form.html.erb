@@ -10,7 +10,7 @@
       </fieldset>
       <fieldset>
         <%= f.label(:parent_id) %>
-        <%= f.select(:parent_id, @products.collect {|s| [s.name, s.id]}) %>
+        <%= f.select(:parent_id, @products.collect {|s| [s.name, s.id]}.insert(0, "No Parent ID")) %>
       </fieldset>
       <fieldset>
         <%= f.label(:active?)%>
