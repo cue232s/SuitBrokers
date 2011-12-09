@@ -6,7 +6,7 @@ class ProductFeatureOptionsController < ApplicationController
   def new
     @product_feature_option = ProductFeatureOption.new(:product_feature_id => @product_feature.id)
     @product_feature_option_count = @product_feature.product_feature_options.size + 1
-    @product_features = Product.sorted
+    @product_features = ProductFeature.sorted
 
 
   end
