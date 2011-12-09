@@ -8,7 +8,7 @@ class Product < ActiveRecord::Base
   has_many :children, :class_name => "Product", :foreign_key => "parent_id"
   belongs_to :shopping_cart_item
   belongs_to  :shopping_cart_item_option
-  has_many  :product_features
+  has_many  :product_features, :through => :children
   has_many  :product_feature_options, :through => :product_features
 
   validates :name, presence: true

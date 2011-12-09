@@ -1,8 +1,9 @@
 <%= error_messages_for( @product_feature )%>
     <table summary="Product Features form fields">
        <tr>
-      <th><%= f.label(:product_id, "product")%></th>
-  <td><%= f.select(:product_id, @products.all.collect {|s| [s.name, s.id]}) %></td>
+        <th>This is a feature of <%= @product.name %></th>
+      <!--<th><%= f.label(:product_id, "product")%></th>-->
+  <!--<td><%= f.select(:product_id, @products.all.collect {|s| [s.name, s.id]}) %></td>-->
       </tr>
       <tr>
         <fieldset>
