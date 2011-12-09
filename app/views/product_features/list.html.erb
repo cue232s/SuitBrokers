@@ -29,7 +29,7 @@
           <td><%=	 link_to(image_tag(product_feature.photo.url(:thumb)),{:action => 'show', :id => product_feature.id})  %></td>
           <td><%=	 product_feature.name %></td>
           <td class="actions">
-            <%= link_to("Show Features", {:controller => 'Product_feature_options', :action => 'list', :product_feature_id => product_feature.id}, :class => 'action show') %>
+            <%= link_to("Show Feature Options", {:controller => 'Product_feature_options', :action => 'list', :product_feature_id => product_feature.id}, :class => 'action show') %>
             <%= link_to("Show", {:action => 'show', :id => product_feature.id}, :class => 'action show') %>
             <%= link_to("Edit", {:action => 'edit', :id => product_feature.id, :product_id => product_feature.product_id}, :class => 'action edit') %>
             <%= link_to("Delete", {:action => 'delete', :id => product_feature.id}, :class => 'action delete') %>

@@ -80,7 +80,7 @@ class ProductFeatureOptionsController < ApplicationController
   private
   def find_product_feature
     if params[:product_feature_id]
-      @product_feature = Product.find_by_id(params[:product_feature_id])
+      @product_feature = ProductFeature.find_by_id(params[:product_feature_id])
     end
 
   end
